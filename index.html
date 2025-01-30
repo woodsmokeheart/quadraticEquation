@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Root of the quadratic equation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="https://sun9-31.userapi.com/impg/bJ3oVMJ-eBDItcaArj6KlZ8GRo8FCuC_qXB4zQ/LrfMckz25gU.jpg?size=2200x2200&quality=95&sign=adc26571192bab1bccdb300b246f2c09&type=album"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h2>Добро пожаловать!</h2>
+        <h3>И хорошего дня!</h3>
+        <button id="playMusicBtn" class="playMusicBtn">Спасибо</button>
+      </div>
+    </div>
+    <div class="container">
+      <button id="toggleMusicBtn" class="toggleMusicBtn">
+        <img
+          width="64"
+          height="64"
+          id="toggleMusicImg"
+          src="https://img.icons8.com/nolan/64/play.png"
+          alt="play"
+        />
+      </button>
+      <h1>Вычисление корней квадратного уравнения</h1>
+      <div class="output">
+        <p id="equation">ax^2 + bx + c = 0</p>
+        <div class="rootEquation">
+          x1 =
+          <p id="root1">?</p>
+        </div>
+        <div class="rootEquation">
+          x2 =
+          <p id="root2">?</p>
+        </div>
+      </div>
+      <div>
+        <input type="number" id="a" placeholder="a" />
+        <input type="number" id="b" placeholder="b" />
+        <input type="number" id="c" placeholder="c" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
