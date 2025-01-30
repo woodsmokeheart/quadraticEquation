@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // "Уравнение не имеет реальных корней"
       return "?";
     } else if (discriminant === 0) {
-      // "Уравнение имеет один корень"
-      return "?" + -b / (2 * a);
+      // Уравнение имеет один корень
+      return [-b / (2 * a)];
     } else {
       var root1 = ((-b + Math.sqrt(discriminant)) / (2 * a)).toFixed(2);
       var root2 = ((-b - Math.sqrt(discriminant)) / (2 * a)).toFixed(2);
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const result = solveQuadratic(a, b, c);
-    x1root.textContent = result[0] + "";
+    x1root.textContent = result[0];
     x2root.textContent = result[1] ? result[1] : "?";
   }
 
